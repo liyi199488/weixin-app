@@ -1,0 +1,88 @@
+<!--pages/post/post.wxml-->
+<view>
+  <swiper indicator-dots='true' indicator-color='red' vertical='' autoplay='true' interval='5000'>
+    <swiper-item>
+      <image src='/image/post/post-1@text.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/image/post/post-2@text.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/image/post/post-3@text.jpg'></image>
+    </swiper-item>
+  </swiper>
+
+<!--
+  <view class='post-container'>
+    <view class='post-auther-date'>
+      <image src='/image/avatar/avatar-5.png' mode='aspectFit'></image>
+      <text>jan.28.2017</text>
+    </view>
+    <text class='post-title'>小时候的冰棍与雪糕</text>
+    <image class='post-image' src='/image/post/post-4.jpg' mode='aspectFit'></image>
+    <text class='post-content'>冰棍与雪糕绝对不是同一个东西，3到5毛钱的雪糕犹如现在的哈哈根达斯，而5分到1毛 的冰杨棍儿就像现在的老冰棒，时过境迁，……</text>
+    <view class='post-like'>
+      <image src='/image/icon/wx_app_collect.png'></image>
+      <text>100</text>
+      <image src='/image/icon/wx_app_view.png'></image>
+      <text>92</text>
+      <image src='/image/icon/wx_app_message.png'></image>
+      <text>7</text>
+    </view>
+  </view>
+-->
+  <view class='post-container'>
+    <view class='post-auther-date'>
+      <image src='{{avatar}}' mode='aspectFit'></image>
+      <text>{{object.date}}</text>
+    </view>
+    <text class='post-title'>{{title}}</text>
+    <image class='post-image' src='{{postImg}}' mode='aspectFit'></image>
+    <text class='post-content'>{{content}}</text>
+    <view class='post-like'>
+      <image src='/image/icon/wx_app_collect.png'></image>
+      <text>{{collectNum.array[0]}}</text>
+      <image src='/image/icon/wx_app_view.png'></image>
+      <text>{{readingNum}}</text>
+      <image src='/image/icon/wx_app_message.png'></image>
+      <text>{{commentNum}}</text>
+    </view>
+  </view>
+
+    <view class='post-container'>
+    <view class='post-auther-date'>
+      <image src='/image/avatar/avatar-1.png' mode='aspectFit'></image>
+      <text>jan.28.2017</text>
+    </view>
+    <text class='post-title'>从童年呼啸面过的火车</text>
+    <image class='post-image' src='/image/post/post-5.jpg' mode='aspectFit'></image>
+    <text class='post-content'>小时候，家的后面有一条铁路，听説从南方北上的火车都必须经过这条铁路，坐车大多在晚上经过，但了不定是只有在夜深人静的时候，火车的声音才能从远方传过来，……</text>
+    <view class='post-like'>
+      <image src='/image/icon/wx_app_collect.png'></image>
+      <text>100</text>
+      <image src='/image/icon/wx_app_view.png'></image>
+      <text>92</text>
+      <image src='/image/icon/wx_app_message.png'></image>
+      <text>7</text>
+    </view>
+  </view>
+
+    <view class='post-container'>
+    <view class='post-auther-date'>
+      <image src='/image/avatar/avatar-3.png' mode='aspectFit'></image>
+      <text>jan.28.2017</text>
+    </view>
+    <text class='post-title'>记忆里的春节</text>
+    <image class='post-image' src='/image/post/post-1.jpg' mode='aspectFit'></image>
+    <text class='post-content'>年少时，有几样东西，是春节里必不可少的：烟花、新衣、凉菜、压岁钱、饺子、年分大小年，有的地方是腊月二十三过小年，有的地方是腊月二十四……</text>
+    <view class='post-like'>
+      <image src='/image/icon/wx_app_collect.png'></image>
+      <text>100</text>
+      <image src='/image/icon/wx_app_view.png'></image>
+      <text>92</text>
+      <image src='/image/icon/wx_app_message.png'></image>
+      <text>7</text>
+    </view>
+  </view>
+
+</view>
