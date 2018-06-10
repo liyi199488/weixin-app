@@ -3,7 +3,7 @@
   <image class='avatar' src='/image/avatar/avatar-3.png'></image>
   <text class='motto'>hello 桔子罐头</text>
 
-  <view class='container-journey'>
+  <view catchtap='onTapJump' class='container-journey'>
     <text class='journey'>开启小程序之旅</text>
   </view>
 </view>

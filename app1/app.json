@@ -1,15 +1,15 @@
 {
   "pages": [
-
-      "pages/post/post",
       "pages/welcome/welcome",
+      "pages/post/post",
+
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#ecc0a8",
+    "backgroundTextStyle": "light",
+
     "navigationBarTitleText": "小程序",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   }
 }

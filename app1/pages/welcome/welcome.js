@@ -9,6 +9,17 @@ Page({
   },
 
   /**
+   * 跳转函数，点击本页‘开启小程序之旅"后执行的东西
+   */
+  onTapJump: function(event) {
+      wx:wx.navigateTo({
+        url: '../post/post',
+        success: function(res) {console.log("jump success")},
+        fail: function (res) { console.log("jump fail")},
+        complete: function (res) { console.log("jump complete")},
+      })
+  },
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
@@ -40,7 +51,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+    console.log("page is unload")
   },
 
   /**
