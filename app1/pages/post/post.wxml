@@ -33,19 +33,19 @@
 -->
   <view class='post-container'>
     <view class='post-auther-date'>
-      <image src='{{avatar}}' mode='aspectFit'></image>
-      <text>{{object.date}}</text>
+      <image src='{{postData.avatar}}' mode='aspectFit'></image>
+      <text>{{postData.object.date}}</text>
     </view>
-    <text class='post-title'>{{title}}</text>
-    <image class='post-image' src='{{postImg}}' mode='aspectFit'></image>
-    <text class='post-content'>{{content}}</text>
+    <text class='post-title'>{{postData.title}}</text>
+    <image class='post-image' src='{{postData.postImg}}' mode='aspectFit'></image>
+    <text class='post-content'>{{postData.content}}</text>
     <view class='post-like'>
       <image src='/image/icon/wx_app_collect.png'></image>
-      <text>{{collectNum.array[0]}}</text>
+      <text>{{postData.collectNum.array[0]}}</text>
       <image src='/image/icon/wx_app_view.png'></image>
-      <text>{{readingNum}}</text>
+      <text>{{postData.readingNum}}</text>
       <image src='/image/icon/wx_app_message.png'></image>
-      <text>{{commentNum}}</text>
+      <text>{{postData.commentNum}}</text>
     </view>
   </view>
 

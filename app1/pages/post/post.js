@@ -4,25 +4,26 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-      object:{date: "2017年2月2日" },      
-      title:"小时候的冰棍和雪糕",
-      postImg: '/image/post/post-4.jpg' ,
-      avatar: '/image/avatar/avatar-5.png',
-      content:'冰棍与雪糕绝对不是同一个东西，3到5毛钱的雪糕犹如现在的哈哈根达斯，而5分到1毛 的冰杨棍儿就像现在的老冰棒，时过境迁，……',
-      readingNum:92,
-      collectNum:100,
-      collectNum:{array:[100]},
-      commentNum:7
-  },
+  data: {  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("onLoad:页面被加载");
+
+    var iceCreamData={
+      object: { date: "2017年2月2日" },
+      title: "小时候的冰棍和雪糕",
+      postImg: '/image/post/post-4.jpg',
+      avatar: '/image/avatar/avatar-5.png',
+      content: '冰棍与雪糕绝对不是同一个东西，3到5毛钱的雪糕犹如现在的哈哈根达斯，而5分到1毛 的冰杨棍儿就像现在的老冰棒，时过境迁，……',
+      readingNum: 92,
+      collectNum: 100,
+      collectNum: { array: [100] },
+      commentNum: 7
+    };
     this.setData(
-      {title:'一根雪糕的经济学原理'}
+      { postData: iceCreamData}
           )
   },
 
