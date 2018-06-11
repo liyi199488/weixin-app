@@ -1,4 +1,6 @@
 //app.js
+
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -32,6 +34,17 @@ App({
         }
       }
     })
+    //初始化数据
+    /*
+    var storageData = wx.getStorageSync("postList");
+    if (!storageData) {
+      //缓存不存在
+      var dataObj = require("data/data.js")
+      wx.clearStorageSync();
+      wx.setStorageSync("postList", dataObj.postList);
+    }
+    */
+
   },
   globalData: {
     userInfo: null

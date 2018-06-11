@@ -1,5 +1,5 @@
 // pages/post/post.js
-var dataObj= require("../../data/data.js")
+var DBPost = require("../../db/DBPost.js").DBPost;
 Page({
 
   /**
@@ -11,11 +11,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    var dbPost=new DBPost();
+    var postData = dbPost.getAllPostData();
     this.setData(
       {
-         postList:dataObj.postList
+        postList: postData
       }
-    )
+    );
   },
 
   /**
