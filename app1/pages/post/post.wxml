@@ -1,4 +1,5 @@
 <!--pages/post/post.wxml-->
+<import src='../../template/post-item-tpl.wxml'/>
 <view>
   <swiper indicator-dots='true' indicator-color='red' vertical='' autoplay='true' interval='5000'>
     <swiper-item>
@@ -12,23 +13,7 @@
     </swiper-item>
   </swiper>
 <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
-<view class='post-container'>
-    <view class='post-auther-date'>
-      <image src='{{item.avatar}}' mode='aspectFit'></image>
-      <text>{{item.date}}</text>
-    </view>
-    <text class='post-title'>{{item.title}}</text>
-    <image class='post-image' src='{{item.postImg}}' mode='aspectFit'></image>
-    <text class='post-content'>{{item.content}}</text>
-    <view class='post-like'>
-      <image src='/image/icon/wx_app_collect.png'></image>
-      <text>{{item.collectNum}}</text>
-      <image src='/image/icon/wx_app_view.png'></image>
-      <text>{{item.readingNum}}</text>
-      <image src='/image/icon/wx_app_message.png'></image>
-      <text>{{item.commentNum}}</text>
-    </view>
-  </view>
+  <template is='postItemTpl' data="{{item}}"/>
 
 </block>
   
