@@ -1,5 +1,5 @@
 // pages/post/post.js
-var DBPost = require("../../db/DBPost.js").DBPost;
+import {DBPost} from "../../db/DBPost.js";
 Page({
 
   /**
