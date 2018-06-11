@@ -1,7 +1,8 @@
 class DBPost{
   //构造函数 
-  constructor(url){
+  constructor(postId){
     this.storageKeyName = 'potList';//所有的文章本地缓存存储键值
+    this.postId=postId;
   }
   //得到全部文章信息
   getAllPostData() {
@@ -16,7 +17,19 @@ class DBPost{
   execSetStorageSync() {
     WX.setStorgeSync(this.storageKeyName, data);
   }
-
+  //获取指定ID的文章数据
+  getPostItemById() {
+    var postData = this.getAllPostData();
+    var len = postData.length;
+    for (var i = 0; i < len; i++) {
+      if (postData[i].postId == this.postId) {
+        return {
+          index: i,
+          data: postData[i]
+        }
+      }
+    }
+  }
 };
 
 export { DBPost}
