@@ -8,9 +8,6 @@
     "pages/logs/logs"
   ],
   "window": {
-    "backgroundTextStyle": "light",
 
-    "navigationBarTitleText": "小程序",
-    "navigationBarTextStyle": "white"
   }
 }

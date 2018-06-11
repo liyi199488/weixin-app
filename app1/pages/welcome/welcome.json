@@ -1,3 +1,5 @@
 {
-      "navigationBarBackgroundColor": "#ecc0a8"
+      "navigationBarBackgroundColor": "#ecc0a8",
+          "navigationBarTitleText": "小程序",
+          "navigationBarTextStyle": "white"
 }
